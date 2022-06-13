@@ -1,0 +1,16 @@
+#
+# Salutation Drupal module
+# Paul Kallio
+# 31.1.2022
+#
+services:
+  salutation.salutation:
+    class: Drupal\salutation\Salutation
+    arguments: ['@config.factory']
+    tags:
+      - { name: drupal_9_developer, priority: -100 }
+  salutation.redirect_subscriber:
+    class: Drupal\salutation\SalutationRedirectSubscriber
+    arguments: ['@current_user']
+    tags:
+      - { name: event_subsciber }

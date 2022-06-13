@@ -1,0 +1,25 @@
+#
+# Salutation Drupal module
+# Paul Kallio
+# 30.1.2022
+#
+salutation.salutation:
+  path: '/salutation'
+  defaults:
+    _controller: Drupal\salutation\Controller\SalutationController::Salutation
+    _title: 'Our first route'
+  requirements:
+    _access: 'TRUE'
+    # _permission: 'access_content'
+  options:
+    parameeters:
+      param:
+        type: entity:node
+
+salutation.greeting_form:
+  path: '/admin/config/salutation-configuration'
+  defaults:
+    _form: Drupal\salutation\Form\SalutationConfigurationForm
+    _title: 'Salutation configuration'
+  requirements:
+    _permission: 'administer site configuration'

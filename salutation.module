@@ -1,0 +1,37 @@
+<?php
+
+/**
+ * @file
+ * Salutation Drupal hook module.
+ *
+ * Paul Kallio
+ * 28.1.2022.
+ */
+
+use Drupal\Core\Routing\RouteMatchInterface;
+
+/**
+ * Salutation_help.
+ */
+function salutation_help($route_name, RouteMatchInterface $route_match) {
+
+  switch ($route_name) {
+    case 'help.page.salutation':
+      $output = '';
+      $output .= '<h3>' . t('about') . '</h3>';
+      $output .= '<p>' . t('This is an example module.') . '</p>';
+      return $output;
+
+    default:
+      return "";
+  }
+}
+
+/**
+ * Salutation_preprocess hook.
+ */
+/* function salutation_preprocess(&$variables, $hook) {
+ * $message = 'salutation->hook_preprocess';
+ * \Drupal::logger('salutation')->notice($message);
+ * var_dump($hook);
+}*/

@@ -1,0 +1,10 @@
+#
+# Salutation Drupal module
+# Paul Kallio
+# 28.1.2022
+#
+name: Salutation
+description: Salutation module
+type: module
+core_version_requirement: ^9
+package: Custom
