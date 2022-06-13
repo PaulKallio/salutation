@@ -15,7 +15,7 @@
     }
   ],
   "extra": {
-    "class": "Drupal\\Salutation\\Salutation",
+    "class": "Drupal\\salutation\\Salutation",
     "branch-alias": {
       "dev-master": "0.x-dev"
     }
