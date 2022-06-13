@@ -3,7 +3,8 @@
   "license": "proprietary",
   "description": "A short salutation text to be used in drupal pages.",
   "require": {
-    "php": ">=7.4"
+    "php": ">=7.4",
+    "composer-plugin-api": "^1.1 || ^2.0"
   },
   "type": "composer-plugin",
   "homepage": "https://github.com/PaulKallio/salutation",
@@ -12,5 +13,11 @@
       "name": "Paul Kallio",
       "email": "paul.kallio@ibm.com"
     }
-  ]
+  ],
+  "extra": {
+    "class": "Drupal\\Salutation\\Salutation",
+    "branch-alias": {
+      "dev-master": "0.x-dev"
+    }
+  }
 }
