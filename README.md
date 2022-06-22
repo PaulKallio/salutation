@@ -17,3 +17,4 @@ Plugin can be added to any Drupal page with:
 
           Salutation > Place block > Save blocks
 
+...
